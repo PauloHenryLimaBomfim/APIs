@@ -1,0 +1,26 @@
+body{
+    background-color: lightskyblue;
+    font: normal 15pt Arial;
+}
+header{
+    display: flex;
+    margin: auto;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 15px;
+}
+section .moedaIndividual img{
+    margin: auto;
+    margin-left: 15%;
+    width: 20px;
+    height: 20px;
+}
+.moedaIndividual{
+    display: flex;
+}
