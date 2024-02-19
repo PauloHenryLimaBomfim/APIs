@@ -9,6 +9,6 @@ function compartilhar(){
         })
         .catch(console.error);
     } else {
-        // fallback
+        
     }
 }

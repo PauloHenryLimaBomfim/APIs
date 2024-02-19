@@ -1,9 +1,9 @@
-const endpoint = "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL";
+const endpoint = "https://economia.awesomeapi.com.br/json/last/";
 // (bid(compra) + ask(venda))/2 = cotação atual
 // varbid é a variação
 // pctChance é a porcentagem de variação
 function obterDadosMain(){
-    fetch(endpoint).then(res=>res.json()).then(dados=>{
+    fetch(endpoint + "USD-BRL,EUR-BRL").then(res=>res.json()).then(dados=>{
         let setaDolar = document.getElementById('setaDolar');
         let setaEuro = document.getElementById('setaEuro');
         let valorDolar = document.getElementById('valorDolar');
