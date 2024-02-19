@@ -3,7 +3,7 @@ function compartilhar(){
         navigator.share({
           title: document.getElementById('tituloPrincipal').innerText ,
           text: document.getElementById('subtitulo').innerText,
-          url: 'http://127.0.0.1:5500/Sharing/index.html'
+          url: window.location.href
         }).then(() => {
           console.log('Compartilhado com sucesso!');
         })
