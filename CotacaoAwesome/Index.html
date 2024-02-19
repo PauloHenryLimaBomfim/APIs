@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="cotacaoAWESOME.css">
-        <title>Cotação Dolar - Euro - BitCoin</title>
+        <title>Cotação Dolar - Euro</title>
     </head>
-    <body>
+    <body onload="obterDadosMain()">
         <header>
             <h1>Cotação em relação ao Real ( AWESOME API ) </h1>
         </header>
         <section>
-            <div class="moedaIndividual">
+            <a class="moedaIndividual" href="cotacoes.html?moeda=USD">
                 <h1>Dólar</h1>
                 <img src="SetaVerde.png" alt="" id="setaDolar">
                 <h2 id="valorDolar">0,0</h2>
-            </div>
-            <div class="moedaIndividual">
+            </a>
+            <a class="moedaIndividual" href="cotacoes.html?moeda=EUR">
                 <h1>Euro</h1>
                 <img src="SetaVerde.png" alt="" id="setaEuro">
                 <h2 id="valorEuro">0,0</h2>
-            </div>
+            </a>
         </section>
     </body>
     <script src="cotacaoAWESOME.js"></script>

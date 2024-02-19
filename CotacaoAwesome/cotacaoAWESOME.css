@@ -4,7 +4,8 @@ body{
 }
 header{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 section{
     display: flex;
@@ -24,4 +25,6 @@ section .moedaIndividual img{
 }
 .moedaIndividual{
     display: flex;
+    text-decoration: none;
+    color:black;
 }
