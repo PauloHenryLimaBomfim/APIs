@@ -35,3 +35,7 @@ section div{
     display: flex;
     justify-content: flex-end;
 }
+div button{
+    border:none;
+    background-color: aliceblue;
+}

@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="sharing.css">
         <title>O que é porcentagem de Variação ?</title>
     </head>
-    <body>
+    <body onload="carregarLinks()">
         <section>
             <h1 id="tituloPrincipal">Porcentagem de variação: Você conhece esse termo?</h1>
             <div>
-                <img src="icons8-facebook-novo-50.png" alt="" onclick="compartilhar()">
-                <img src="icons8-twitter-50.png" alt="" onclick="compartilhar()">
-                <img src="icons8-link-50.png" alt="" onclick="compartilhar()">
+                <a  target="_blank" id="facebookShareButton"> <img src="icons8-facebook-novo-50.png"> </a>
+                <a  target="_blank" id="twitterShareButton"> <img src="icons8-twitter-50.png"> </a>
+                <button id="copyLink" onclick="copiarAreaTransferencia()" href=""> <img src="icons8-link-50.png"> </button>
             </div>
             <h2 id="subtitulo">A porcentagem de variação refere-se à mudança percentual de uma moeda em relação a outra.</h2>
             <img src="mercadoFinanceiro.jpg" alt="" id="imagemMercadoFinanceiro">
