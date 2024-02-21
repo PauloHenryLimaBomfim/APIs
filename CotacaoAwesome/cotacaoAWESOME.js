@@ -1,7 +1,9 @@
 const endpoint = "https://economia.awesomeapi.com.br/json/last/";
+
 // (bid(compra) + ask(venda))/2 = cotação atual
 // varbid é a variação
 // pctChance é a porcentagem de variação
+
 function obterDadosMain(){
     fetch(endpoint + "USD-BRL,EUR-BRL").then(res=>res.json()).then(dados=>{
         let setaDolar = document.getElementById('setaDolar');
@@ -28,13 +30,4 @@ function obterDadosMain(){
             valorEuro.style.color = '#d41920';
         }
     });
-}
-
-function obterDadosMoeda(moeda){
-    fetch(endpoint).then(res=>res.json()).then(dados=>{
-        let setaMoeda = document.getElementById('setaMoeda');
-        let valorMoeda = document.getElementById('valorMoeda');
-
-        valorMoeda.innerHTML = ((Number(dados./*Moeda*/BRL.ask) + Number(dados./* Moeda */BRL.bid)) / 2).toFixed(2);
-    })
 }
