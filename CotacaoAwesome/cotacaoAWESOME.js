@@ -11,8 +11,8 @@ function obterDadosMain(){
         let valorDolar = document.getElementById('valorDolar');
         let valorEuro = document.getElementById('valorEuro');
 
-        valorDolar.innerHTML = ((Number(dados.USDBRL.ask) + Number(dados.USDBRL.bid)) / 2).toFixed(2);
-        valorEuro.innerHTML = ((Number(dados.EURBRL.ask) + Number(dados.EURBRL.bid)) / 2).toFixed(2);
+        valorDolar.innerHTML = ((Number(dados.USDBRL.ask) + Number(dados.USDBRL.bid)) / 2).toFixed(2).replace('.',',');
+        valorEuro.innerHTML = ((Number(dados.EURBRL.ask) + Number(dados.EURBRL.bid)) / 2).toFixed(2).replace('.',',');
 
         if(dados.USDBRL.pctChange >= 0){
             valorDolar.style.color = '#0ed145';
