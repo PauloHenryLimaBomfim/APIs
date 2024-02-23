@@ -1,4 +1,4 @@
-
+/*
 function compartilhar(){ // Compartilhar para dispositivos moveis
     if (navigator.share) {
         navigator.share({
@@ -13,8 +13,10 @@ function compartilhar(){ // Compartilhar para dispositivos moveis
         
     }
 }
+*/
 
 function carregarLinks(){
+  testaMobile();
   let link = encodeURI(window.location.href);
   let titulo = encodeURIComponent(document.getElementById('tituloPrincipal').innerText);
   let twitter = document.getElementById('twitterShareButton');
@@ -32,3 +34,15 @@ function copiarAreaTransferencia(){
   alert('Copiado para Area de Transferência')
 }
 
+function testaMobile(){
+  if(navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)){
+    let elementoCompartilhar = document.getElementById('compartilhe');
+    elementoCompartilhar.innerHTML = '';
+  }
+}
