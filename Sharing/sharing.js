@@ -1,4 +1,4 @@
-/*
+/* Eu pensei melhor e conclui que essa opção só é viavel em redes sociais onde cada post pode ser compartilhado 
 function compartilhar(){ // Compartilhar para dispositivos moveis
     if (navigator.share) {
         navigator.share({
@@ -35,7 +35,7 @@ function copiarAreaTransferencia(){
 }
 
 function testaMobile(){
-  if(navigator.userAgent.match(/Android/i)
+  if( navigator.userAgent.match(/Android/i)
   || navigator.userAgent.match(/webOS/i)
   || navigator.userAgent.match(/iPhone/i)
   || navigator.userAgent.match(/iPad/i)
@@ -43,6 +43,9 @@ function testaMobile(){
   || navigator.userAgent.match(/BlackBerry/i)
   || navigator.userAgent.match(/Windows Phone/i)){
     let elementoCompartilhar = document.getElementById('compartilhe');
-    elementoCompartilhar.innerHTML = '';
+    elementoCompartilhar.innerHTML = ' ';
+    console.log(true);
+  }else{
+    console.log(false);
   }
 }
