@@ -18,7 +18,7 @@ function obterDadosMain(){
             valorDolar.style.color = '#0ed145';
         }
         else{
-            setaDolar.src = "SetaVermelha.png";
+            setaDolar.src = "img/SetaVermelha.png";
             valorDolar.style.color = '#d41920';
         }
 
@@ -26,7 +26,7 @@ function obterDadosMain(){
             valorEuro.style.color = '#0ed145';
         }
         else{
-            setaEuro.src = "SetaVermelha.png";
+            setaEuro.src = "img/SetaVermelha.png";
             valorEuro.style.color = '#d41920';
         }
     });
