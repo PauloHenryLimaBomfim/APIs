@@ -1,0 +1,19 @@
+body{
+    background-color: #885be4;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-top: 2%;
+}
+section{
+    background-color: white;
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
