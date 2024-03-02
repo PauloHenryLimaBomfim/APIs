@@ -12,14 +12,15 @@
             $verificacao = move_uploaded_file($arquivo['tmp_name'], $path);
             if($verificacao){
                 print "<div><h1> Arquivo enviado com sucesso!</h1>";
+                inserir($mysqli,$arquivo['name'], $path);
                 print "<a target='_blank' href='exibirPDFs.php'>Clique aqui para verificar</a></div>";
-            }else{
-
+            }else { 
+                // um erro ocorreu
             }
         }
     }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>

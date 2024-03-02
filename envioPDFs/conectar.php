@@ -10,15 +10,15 @@ if($mysqli->connect_errno){
 }
 
 function mostrarTodos($mysqli){
-    $sqlquery = $mysqli->query("Select * FROM receberPDF");
+    $sqlquery = $mysqli->query("SELECT * FROM receberPDF");
 
     while($dados = $sqlquery->fetch_assoc()){
-        $pdf = base64_encode($dados['PDF']);
-        print '<embed src="data:application/pdf;base64,' . $pdf . '" width="800px" height="600px" />';
+        print '<embed src="' . $dados['path'] . '" width="800px" height="600px" />';
     }
-
-
 }
 
+function inserir($mysqli, $nome, $path){
+    $mysqli->query("INSERT INTO receberpdf (nome,path) VALUES('$nome', '$path')");
+}
 
 
