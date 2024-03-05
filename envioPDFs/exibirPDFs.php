@@ -14,6 +14,7 @@
             <?php
                 mostrarTodos($mysqli);
             ?>
+            <a href="pdfs.php">Clique aqui para voltar</a>
         </section>
     </body>
 </html>
