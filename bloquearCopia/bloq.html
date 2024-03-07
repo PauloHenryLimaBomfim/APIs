@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bloq.css">
+        <title>Tente cópiar o conteudo!</title>
+    </head>
+    <body>
+        <section>
+            <h1>Vasco da gama</h1>
+            <p>
+                function blockCopy(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                
+                function blockPressCtrlC(e) {
+                    if (e.ctrlKey && e.keyCode == 67) {
+                        blockCopy(e);
+                    }
+                }
+                
+                document.addEventListener("copy", blockCopy, false);
+                document.addEventListener("beforecopy", blockCopy, false);
+                
+                document.addEventListener("keydown", blockPressCtrlC, false);
+            </p>
+            
+        </section>
+    </body>
+</html>
